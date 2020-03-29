@@ -90,7 +90,7 @@ h1{
 	vertical-align: middle;
 	}
 }
-@media only screen and (max-width: 510px){
+@media only screen and (max-width: 520px){
 	h1{
 		font-size: 1.4em;
 		margin: 0px 3px;
