@@ -1,49 +1,8 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Admin Login</title>
-	<style type="text/css">
-		.form{
-			display: flex;
-			margin-top: 200px;
-			margin-left: auto;
-			margin-right: auto;
-			width: 70%;
-			max-width: 800px;
-			background-color: #aaaaaa;
-			padding: 20px;
-			border-radius: 10px;
-			box-shadow: 3px 3px 3px 3px black;
-		}
-		form{
-			margin: 20px 0px;
-			width: 50%;
-		}
-		#login{
-			border-right-width: 1px;border-right-style: solid;border-right-color: black;
-		}
-		h3{
-			text-align: center;
-			margin:0px;
-		}
-		input, button{
-			margin: 5px 10%;
-			border-radius: 4px;
-			box-shadow: 1px 1px 1px 1px #333333;
-			width: 80%;
-		}
-		button{
-			margin-bottom: auto;
-		}
-		button:hover{
-			cursor: pointer;
-			box-shadow: 1px 1px 1px 1px skyblue;
-		}
-		input:hover{
-			box-shadow: 1px 1px 1px 1px skyblue;
-		}
-
-	</style>
+	<title>Schedule</title>
 	<!--Header styles-->
 	<style  type="text/css">
 		html{
@@ -142,10 +101,15 @@
 		}
 
 	</style>
+	<style type="text/css">
+		table{
+			margin-top: 20px;
+			padding: 5px;
+			width: 100%;
+		}
+	</style>
 
 
-	
-	
 </head>
 <body>
 
@@ -164,24 +128,19 @@
 	
 	</div>
 
-	<div class="form">
-		<form id="login">
-			<caption style="font-size: 6em"><h3>Login</h3></caption><br>
-			<input type="password" name="password" placeholder="Password"><br>
-			<button>Login</button>
-		</form>
+	<div>
+		<table border="1">
+			<tr>
+				<td>Date</td><td>Match</td><td>Venue</td><td>Time</td><td>Available Seats</td><td>Book</td>
+			</tr>
 
-		<form id="change">
-			<caption style="font-size: 6em"><h3>Change Password</h3></caption><br>
-			<input type="password" name="password" placeholder="Current Password">
-			<input type="password" name="password" placeholder="New Password">
-			<input type="password" name="password" placeholder="Confirm New Password">
-			<button>Change</button>
-		</form>
+		</table>
+
+
+
 
 	</div>
 
-	
 
 </body>
 </html>
