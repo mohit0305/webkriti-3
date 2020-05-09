@@ -155,8 +155,8 @@
 			<li><a href="./index.html"><img id="logo" src="./titlepng.png"></a></li>
 			<li><a href="./index.html"><h1 id="home">Home</h1></a></li>
 			<li><a href="./index.html#About"><h1>About</h1></a></li>
-			<li><a href="./schedule.html"><h1>Schedule</h1></a></li>
-			<li style="margin-left: auto;"><a href="./adminlogin.html"><h1>Admin Login</h1></a></li>
+		<!--	<li><a href="./schedule.html"><h1>Schedule</h1></a></li> -->
+			<li style="margin-left: auto;"><a href="./adminlogin.html"><h1>View Schedule</h1></a></li>
 			<li><a href="./index.html#querie"><h1>Ask Queries</h1></a></li>
 			<li><a href="./index.html#contacts"><h1>Contact us</h1></a></li>
 
@@ -165,18 +165,18 @@
 	</div>
 
 	<div class="form">
-		<form id="login">
-			<caption style="font-size: 6em"><h3>Login</h3></caption><br>
+		<form id="login" action="/controllers/authenticate-controller" method ="POST" >
+			<caption style="font-size: 6em"><h3> Login to view schedule</h3></caption><br>
+			<input type="text"     name="name"     placeholder="user"><br>
 			<input type="password" name="password" placeholder="Password"><br>
 			<button>Login</button>
 		</form>
 
-		<form id="change">
-			<caption style="font-size: 6em"><h3>Change Password</h3></caption><br>
-			<input type="password" name="password" placeholder="Current Password">
-			<input type="password" name="password" placeholder="New Password">
-			<input type="password" name="password" placeholder="Confirm New Password">
-			<button>Change</button>
+		<form id="change" action="/controllers/register-controller" method ="POST">
+			<caption style="font-size: 6em"><h3>User Register</h3></caption><br>
+			<input type="text" name="username" placeholder="Enter name">
+			<input type="password" name="passcode" placeholder="Password">
+			<button>Register</button>
 		</form>
 
 	</div>

@@ -205,12 +205,18 @@ h4{
 	width: 30px
 }
 #caption{
-    background-color: rgba(0,255,0,0.9);
+	color: white;
+    background-color: rgba(43, 39, 40, 0.836);
 }
 #upcoming{
 	background-image: url(IPL.png);
 	
 }
+#upcoming :hover{
+	background-color: whitesmoke;
+	color: black;
+}
 #tr{
-    background-color: rgba(0,150,255,0.9);
+	color: white;
+    background-color: rgba(42, 42, 43, 0.842);
 }
