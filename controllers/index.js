@@ -1,6 +1,6 @@
 var express=require('express');
 var bodyParser =require('body-parser');
-
+var port  = process.env.PORT || 2000
 var connection = require('./config');
 var app=express();
 var authenticateController=require('./controllers/authenticate-controller');
@@ -23,4 +23,4 @@ app.get('/adminlogin.html',function(req,res){
         app.post('/controllers/register-controller',registerController.register);
         app.post('/controllers/authenticate-controller',authenticateController.authenticate);
 
-app.listen(2000);
+app.listen(port);
