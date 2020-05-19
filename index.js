@@ -1,10 +1,10 @@
 var express=require('express');
 var bodyParser =require('body-parser');
 
-var connection = require('./config');
+var connection = require('./config1');
 var app=express();
-var authenticateController=require('./controllers/authenticate-controller');
-var registerController =require('./controllers/register-controller');
+var authenticateController=require('./controllers/authenticate-controller1');
+var registerController =require('./controllers/register-controller1');
 
 app.use(express.static(__dirname))
 app.use(bodyParser.urlencoded({extended : true}));
