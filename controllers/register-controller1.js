@@ -6,7 +6,7 @@ module.exports.register = function(req,res){
    var name = req.body.username;
  var password=req.body.passcode;
  if(name != "" && password != ""){
-    postgress('user').insert({
+    postgress('users').insert({
         "name" : req.body.username,
         "password" : req.body.passcode,
        

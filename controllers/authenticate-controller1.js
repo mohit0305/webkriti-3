@@ -3,7 +3,7 @@ module.exports.authenticate = function(req,res){
     var name = req.body.name;
     var password =req.body.password;
 if(name != "" && password != "" ){
-    postgress.select('name','password').from('user').where('name',name).then(data =>{
+    postgress.select('name','password').from('users').where('name',name).then(data =>{
         
         if(data[0].password === password){
             res.sendFile(__dirname + "/" + "schedule.html");
