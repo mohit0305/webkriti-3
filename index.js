@@ -3,6 +3,7 @@ var bodyParser =require('body-parser');
 
 var connection = require('./config1');
 var app=express();
+let port = process.env.PORT || 2000;
 var authenticateController=require('./controllers/authenticate-controller1');
 var registerController =require('./controllers/register-controller1');
 
@@ -23,4 +24,4 @@ app.get('/adminlogin.html',function(req,res){
         app.post('/controllers/register-controller',registerController.register);
         app.post('/controllers/authenticate-controller',authenticateController.authenticate);
 
-app.listen(2000);
+app.listen(port);
