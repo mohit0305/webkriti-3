@@ -15,7 +15,7 @@ if(name != "" && password != "" ){
             })
         }
 
-    }).catch(err => res.status(400).alert("wrong credentials entered"));
+    }).catch(err => res.status(400).json('wrong credentials entered'));
 }
 else{
     res.json({
