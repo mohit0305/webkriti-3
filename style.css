@@ -142,11 +142,13 @@ caption{
 	max-width: 500px;
 	border: 2px solid black;
 	border-radius: 15px;
+	background-color: black;
+	color: cornsilk;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 5px;
 	text-align: center;
-	padding: 5px;
+	padding: 100px;
 }
 h3{
 	text-align: center;
@@ -162,6 +164,8 @@ input:hover{
 }
 #comment{
 	height:150px;
+	background-color:  rgba(80,80,80,.5);
+	color: whitesmoke;
 }
 
 
@@ -169,7 +173,8 @@ input:hover{
 	background-color: black;
 	padding: 0px;
 	margin-bottom: 0px;
-	padding-bottom: 20px;
+	padding-top: 100px;
+	padding-bottom: 200px;
 }
 #logo2{
 	width: 100px;
@@ -210,13 +215,25 @@ h4{
 }
 #upcoming{
 	background-image: url(IPL.png);
+	height: 500px;
+	
 	
 }
-#upcoming :hover{
+/*#upcoming :hover{
 	background-color: whitesmoke;
 	color: black;
-}
+}*/
 #tr{
 	color: white;
     background-color: rgba(42, 42, 43, 0.842);
+}
+#submit{
+	background-color: cyan;
+}
+#content{
+	background-color:  rgba(80,80,80,.5);
+	color: whitesmoke;
+}
+#About{
+width: auto;
 }

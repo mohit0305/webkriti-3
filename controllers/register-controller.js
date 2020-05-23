@@ -17,7 +17,7 @@ module.exports.register = function(req,res){
             })
         }
         else{
-            res.sendFile(__dirname + "/" + "schedule.html" );
+            res.sendFile(__dirname + "/" + "adminlogin.html" );
         }
     });
 }
